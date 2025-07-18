@@ -8,11 +8,12 @@ export default function Sidebar({
     onAddBoard,
   }) {
     return (
-      <div className="border-end p-3 bg-white" style={{ width: 250 }}>
-        <h5>Minhas Listas</h5>
+      <div className="sidebar border-end p-3" style={{ width: 250}}>
+        <h5>MyLists</h5>
         <div className="list-group mb-3">
           {boards.map((board) => (
             <div
+              id="listgroup"
               key={board.id}
               className={`list-group-item list-group-item-action d-flex justify-content-between align-items-center ${board.id === activeBoardId ? "active" : ""}`}
               onClick={() => onSelectBoard(board.id)}
@@ -25,12 +26,12 @@ export default function Sidebar({
         </div>
         <input
           className="form-control mb-2"
-          placeholder="Nova lista..."
+          placeholder="New List..."
           value={newBoardName}
           onChange={(e) => setNewBoardName(e.target.value)}
         />
-        <button className="btn btn-primary w-100" onClick={onAddBoard}>
-          + Criar Lista
+        <button className="btn btn-primary w-100" id="button-create" onClick={onAddBoard}>
+          + Create List
         </button>
       </div>
     );

@@ -66,3 +66,52 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.sidebar{
+  background-color: rgba(225, 204, 241, 0.52);
+}
+#listgroup{
+  color: black;
+  background-color: #EADDFF;
+  border-color: #EADDFF;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+#listgroup.active{
+  color: white;
+  background-color: #4F378B;
+  border-color: #4F378B;
+}
+
+.btn-close{
+  background-color: white;
+}
+#button-create{
+  background-color: #4F378B;
+  border: #4F378B;
+  color: white;
+}
+
+#bgMain{
+  background-color: rgba(136, 107, 161, 0.84);
+}
+#btnColumn{
+  background-color: #4F378B;
+  border: #4F378B;
+  color: white;
+}
+.card-body{
+  background-color: rgba(213, 200, 220, 0.85);
+}
+#btnPlus{
+  background-color: #4F378B;
+  border-color: #4F378B;
+  color: white;
+}
+#taskCard{
+  flex-direction: row;
+  background-color: #F3E7FB;
+}
+#taskCard:first-child{
+  margin-top: 20px;
+}

@@ -43,11 +43,11 @@ export default function Board({ board, onUpdate }) {
       <div className="d-flex mb-3">
         <input
           className="form-control me-2"
-          placeholder="Nova coluna..."
+          placeholder="New Column..."
           value={newColName}
           onChange={(e) => setNewColName(e.target.value)}
         />
-        <button className="btn btn-success" onClick={addColumn}>+ Coluna</button>
+        <button className="btn btn-success" onClick={addColumn} id="btnColumn">Add Column</button>
       </div>
       <DragDropContext onDragEnd={onDragEnd}>
         <div className="d-flex flex-nowrap overflow-auto gap-3">

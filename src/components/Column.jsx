@@ -23,6 +23,15 @@ export default function Column({ column, onDelete, onUpdateTasks }) {
           <h6 className="card-title mb-0">{column.title}</h6>
           <button className="btn-close btn-sm" onClick={onDelete}></button>
         </div>
+        <div className="d-flex">
+          <input
+            className="form-control me-2"
+            placeholder="Nova tarefa..."
+            value={newTaskText}
+            onChange={(e) => setNewTaskText(e.target.value)}
+          />
+          <button id="btnPlus" className="btn btn-outline-primary" onClick={addTask}>+</button>
+        </div>
         <Droppable droppableId={column.id}>
           {(provided) => (
             <div ref={provided.innerRef} {...provided.droppableProps} className="mb-2">
@@ -44,15 +53,6 @@ export default function Column({ column, onDelete, onUpdateTasks }) {
             </div>
           )}
         </Droppable>
-        <div className="d-flex">
-          <input
-            className="form-control me-2"
-            placeholder="Nova tarefa..."
-            value={newTaskText}
-            onChange={(e) => setNewTaskText(e.target.value)}
-          />
-          <button className="btn btn-outline-primary" onClick={addTask}>+</button>
-        </div>
       </div>
     </div>
   );

@@ -41,7 +41,7 @@ export default function App() {
         setNewBoardName={setNewBoardName}
         onAddBoard={addBoard}
       />
-      <div className="flex-grow-1 p-4 bg-light overflow-auto">
+      <div className="flex-grow-1 p-4 overflow-auto" id="bgMain">
         {activeBoard ? (
           <Board board={activeBoard} onUpdate={updateBoard} />
         ) : (
