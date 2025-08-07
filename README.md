@@ -5,9 +5,7 @@
 - [Demo](https://beatrizalinecosta.github.io/mylists_todo_app/)
 
 ### 💻 Built With
-* ![image](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-* ![image](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
-
+[![My Skills](https://skillicons.dev/icons?i=react,js,html,css,bootstrap)](https://skillicons.dev)
 
 ## 🚀 Instalando
 
@@ -17,7 +15,7 @@ Clone o repositório:
 
 ```
 git clone https://github.com/beatrizalinecosta/mylists_todo_app.git
-cd app-pokeapi
+cd mylists_todo_app
 ```
 
 Instale as dependências:
